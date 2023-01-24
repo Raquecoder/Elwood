@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1rem;
+    color:#404040;
+    
+    line-height: 1.6;
+}
+
+.nav{
+    
+    display:flex;
+    justify-content: space-around;
+    background-color:rgb(0, 0, 0);
+    height: 73px;
+    padding-left:.5em;
+    text-transform: capitalize;
+}
+
+#logo{
+    background-color:#FFE600;
+    top: 0px;
+    left: 101px;
+    width: 192px;
+    padding-top: .5em;
+    
+    
+}
+li,a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #FFE600;
+    
+}
+
+.main{
+    
+    background-image: url(hero-bg.jpg);
+    background-color: black;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%; 
+    padding-left:.5em;
+    margin-top:-20px;
+    
+    
+}
+
+.main-text{
+   text-align: left;
+   top: 150px;
+   left: 34px;
+   width: 259px;
+   height: 301px;
+   color:#fff;
+
+}
+h2{
+    color:black;
+    border-bottom:2px #FFE600 solid ;
+}
+.h2{
+    color:black;
+    border:none;
+}
+.p1{
+    font-size: larger;
+    color:white;
+}
+.p{
+    font-size:small;
+}
+span{
+    color:#FFE600;
+}
+.button{
+    background-color:#FFE600;
+    color:black;
+    border:none;
+    padding:.5em 1.75em;
+    
+}
+
+.button:hover,
+.button:focus{
+    background-color: #000;
+    color:#FFE600;
+    border:1px #FFE600 solid;
+    
+}
+
+.main-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    top: 840px;
+    left: 78px;
+    width: 288px;
+    height: 220px;
+    text-align: center;
+    background-color: white;
+    color:black;
+    text-align: center;
+}
+.container-social-media{
+    background-color:#EBEBEB;
+    text-align: center;
+    color:#000;
+    opacity:0.37;
+    margin-top: 2em;
+}
+
+@media(min-width:600px) {
+    .main{
+        height:450px;
+    }
+    .main-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    
+    }
+    .main-text{
+        padding-top: 3em;
+        padding-left: 2.5em;
+    }
+    .container-social-media{
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content: space-around;
+    }
+    .footer{
+        width:50%;
+    }
+}
